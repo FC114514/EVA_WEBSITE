@@ -1,0 +1,60 @@
+html,body{
+	scroll-behavior:smooth;
+	background-color: #FDFBFA;
+	background: url(../img/webbg.png);
+	background-repeat: repeat;
+	background-size: auto;
+	z-index: -10;
+}
+
+.bg {
+    width: 100%;
+}
+
+.bg img{
+	width: 100%;
+}
+
+
+.menu{
+			padding-top: 100px;
+			padding-bottom: 100px;
+            width: 98%;
+            height: 700px;
+            display: flex;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  			border-radius: 10px;
+  			backdrop-filter: blur(3px);
+}
+.character{
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+            border-radius: 20px;
+            border: 10px solid #fff;
+            background-color: #fff;
+}
+.character>img{
+            width: 200%;
+            height: 85%;
+            object-fit: cover;
+            transition: .5s;
+}
+.character>span{
+            font: 200 45px "微软雅黑";
+            text-align: center;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.character:hover{
+            flex-basis: 40%;
+}
+.character:hover>img{
+            width: 100%;
+            height: 100%;
+}
